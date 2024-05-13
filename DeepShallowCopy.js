@@ -20,7 +20,7 @@ console.log(value);
 console.log(algorithm);
 
 
-//deep copy 
+//deep copy   (doesnt modify data)
 
 let algorithm1 = {
     name : "Javascript",
@@ -39,3 +39,14 @@ value1.hobbies.push("Scripting language");
 console.log("************DEEP COPY*********************")
 console.log(value1);
 console.log(algorithm1);
+
+
+"###############################################################################################################################################################"
+
+const a =[1,2,3,4];
+
+const b=[...a];
+
+b.push(5);
+console.log(a); //1,2,3,4 because spread operator doesnt gives reference
+console.log(b);//1 2 3 4 5
